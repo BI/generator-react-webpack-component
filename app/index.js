@@ -14,10 +14,6 @@ module.exports = yeoman.generators.Base.extend({
 
   configuring: function () {
     this.fs.copy(
-      this.templatePath('bowerrc'),
-      this.destinationPath('.bowerrc')
-    );
-    this.fs.copy(
       this.templatePath('editorconfig'),
       this.destinationPath('.editorconfig')
     );
@@ -39,8 +35,8 @@ module.exports = yeoman.generators.Base.extend({
         { appname: this.appname, slug: this.slug, libname: this.libname }
       );
       this.fs.copyTpl(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json'),
+        this.templatePath('_example.js'),
+        this.destinationPath('example.js'),
         { appname: this.appname, slug: this.slug, libname: this.libname }
       );
       this.fs.copyTpl(

@@ -18,7 +18,7 @@ describe('react-webpack-component:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'bower.json',
+      'example.js',
       'package.json',
       '.editorconfig',
       '.jshintrc'
